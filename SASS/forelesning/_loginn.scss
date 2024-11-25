@@ -1,0 +1,39 @@
+@use 'colors' as*;
+@use 'mixin' as*;
+@use 'design' as*;
+
+
+form{
+    color: $black;
+    @extend .blurred-effect;
+    @include flexbox(column, nowrap , 1rem );
+    @include box(600px, auto, 3rem, 30px);
+
+    label{
+        @include box(100%, auto, 1rem, 20px);
+        @include felx(row, nowrap, 1rem);
+        background-color: white;
+
+
+        i{
+            @include bix(50px, 50px, 0.5rem, 100%);
+            @extend .flex-container-center;
+            display: flex !important;
+            width: 50px;
+            background-color: $black;
+            color: $white
+        }
+
+        input{
+            border: none;
+
+        }
+
+    }
+
+    input{
+        @include box (200px,auto, 1rem, 100%);
+        border: 1 px solid $black;
+    }
+
+}

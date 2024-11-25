@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registreringsskjema</title>
+</head>
+<body>
+<header>
+<h1>Registreringsskjema</h1>
+</header>
+
+<main>
+<form action="#" method="post">
+<label for="name">Navn:</label>
+<input type="text" id="name" name="name" value="Bilal Rizwan" pattern="[A-Za-zæøåÆØÅ ]{2,}" required><br><br>
+
+<label for="email">E-post:</label>
+<input type="email" id="email" name="email" value="billalar@hiof.no" required><br><br>
+
+<label for="password">Passord:</label>
+<input type="password" id="password" name="password" value="Bilal2343" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br><br>
+
+<label for="age">Alder:</label>
+<input type="number" id="age" name="age" value="19" min="18" max="99" required><br><br>
+
+<label for="phone">Telefonnummer:</label>
+<input type="tel" id="phone" name="phone" value="98466303" pattern="[0-9]{8,12}" required><br><br>
+
+<label for="dob">Fødselsdato:</label>
+<input type="date" id="dob" name="dob" value="2005-09-04" max="2023-12-31" required><br><br>
+
+<label>Kjønn:</label><br>
+<input type="radio" id="female" name="gender" value="Kvinne" checked required>
+<label for="female">Kvinne</label><br><br>
+
+<label for="country">Land:</label>
+<select id="country" name="country" required>
+<option value="Norge" selected>Norge</option>
+<option value="Sverige">Sverige</option>
+<option value="Danmark">Danmark</option>
+</select><br><br>
+
+<label>
+<input type="checkbox" name="privacy" required checked> Jeg godtar personvernerklæringen
+</label><br><br>
+
+<button type="submit">Send inn</button>
+</form>
+</main>
+
+<footer>
+<p>© 2024 - Alle rettigheter reservert</p>
+</footer>
+</body>
+</html>
+
